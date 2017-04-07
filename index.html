@@ -7,6 +7,28 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config( {
+        TeX: ( extensions: [ "AMSmath.js", "AMSsymbol.js" ] },
+        extensions: [ "tex2jax.js" ],
+        jax: [ "input/TeX", "output/HTML-CSS" ],
+        showProcessingMessages: false,
+        messageStyle: "none",
+        showMathMenu: false,
+        tex2jax: {
+          processEnvironments: true,
+          inlineMath: [ [ '$', '$' ], [ "\(", "\)" ] ],
+          displayMath: [ [ '$$', '$$' ], [ "\[", "\]" ] ],
+          preview: "none",
+          processEscapes: true
+        },
+        "HTML-CSS": { linebreaks: { automatic: true, width: "latex-container" } }
+      } );
+    </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+
+    <link rel="stylesheet" href="latex2html5.min.css">
+    <script type="text/javascript" src="latex2html5.min.js"></script>
   </head>
   <body>
     <nav class="navbar navbar-default" role="navigation">
@@ -29,6 +51,23 @@
         </div>
       </div>
     </nav>
+
+    <div>
+      <script type="tex/latex">
+        \begin{pspicture*}
+          \psaxes[labelFontSize=\scriptstyle, xAxis=true, yAxis=true, labels=none, Dx=2, Dy=2, ticksize=0]{->}(0,0)(-2,5)(6,6)[ $x$, 0 ][ $y$, 90 ]
+          \psplot[plotpoints=300, algebraic=true, yMaxValue=6]{-2}{9}{ 0.7*(2*(x-2)^2-4 }
+          \psline[linestyle=dashed, dash=2pt 2pt ]{-}( 2, 0 )(! 2 -4 0.7 mul )
+          \psline[linestyle=dashed, dash=2pt 2pt ]{-}(!0 -4 0.7 mul )(!2 -4 0.7 mul)
+          \begin{scriptsize}
+            \uput[45](! 2 2 sqrt add 0){ $f(x)$ }
+          \end{scriptsize}
+        \end{pspicture*}
+      </script>
+      <script type="text/javascript">
+        $('body').latex();
+      </script>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
