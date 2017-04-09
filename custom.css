@@ -3,6 +3,9 @@ header {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   text-align: center;
   color: white;
 }
