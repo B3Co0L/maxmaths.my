@@ -47,23 +47,23 @@
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed top" role="navigation">
       <div class="container-fluid">
-        <div class="navbar-header">
+        <div class="navbar-header page-scroll">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navMenu">
             <span class="sr-only">Toggle Navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href='//becool.my/maxmaths.my/#'>MaxMaths.my</a>
+          <a class="navbar-brand page-scroll" href='//becool.my/maxmaths.my/#'>MaxMaths.my</a>
         </div>
 
         <!-- All the navigation links for toogling -->
         <div class="collapse navbar-collapse" id="navMenu">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#about">About</a></li>
-            <li><a href="#technologies">Techonologies</a></li>
-            <li><a href="#subjects">Subjects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a class="page-scroll" href="#about">About</a></li>
+            <li><a class="page-scroll" href="#technologies">Techonologies</a></li>
+            <li><a class="page-scroll" href="#subjects">Subjects</a></li>
+            <li><a class="page-scroll" href="#contact">Contact</a></li>
           </ul>
         </div>
         <!-- .navbar-collapse -->
@@ -73,8 +73,28 @@
 
     <header>
       <div class="container-fluid">
+        <div class="introText">
+          <div class="introLeadIn">Welcome to MaxMaths.my</div>
+          <div class="introHeading">Where Learning Maths is Made Easy</div>
+          <a href="#about" class="page-scroll btn btn-xl">Tell Me More</a>
+        </div>
       </div>
     </header>
+
+    <section id="about" class="bg-light-grey">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">About</h2>
+            <h3 class="section-subheading text-muted col-lg-8 col-lg-offset-2">
+              In MaxMaths.my, we strive to provide high quality reference materials for our maths lessions. On top of that, all of these resources are easy to understand, engaging and free to download.
+              <br><br>
+              \[ \Phi (x) = \frac{1}{ \sigma\sqrt{2\pi} }\int_{-\infty}^{x} e^{-\frac{ (t-u)^2 }{ 2\sigma^2 } } dt \]
+            </h3>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
